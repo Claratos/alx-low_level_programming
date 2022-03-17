@@ -1,16 +1,23 @@
 #include "main.h"
+
 /**
- *print_alphabet - abcd
- *Description: print lowercase alphabet
- *Return: void.
+ *print_alphabet_x10 -prints 10 times the alphabet,in lower case,
+ *followed by a new line.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
+char ch;
 int i;
-for (i = 0; i < 26; i++)
+i = 0;
+while (i < 10)
 {
-_putchar(alphabet[i]);
+ch = 'a';
+while (ch <= 'z')
+{
+_putchar(ch);
+ch++;
 }
 _putchar('\n');
+i++;
+}
 }
